@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1>Planetside 2 Cone of Fire Reset Timer</h1>
+        <div id="screenshot"></div>
+        <p id="tip">*burst with your mouse on the image like you would ingame.</p>
+        <div>
+            <p id="click-timer">
+                Time between mouse release and re-click: 
+                <span id="reclick-value"  class="ms">
+                    000
+                </span>
+                ms
+            </p>        
+        </div>
+        <div id="weapon-calculator">
+            <h1>Weapon Cone of Fire Reset Calculator</h1>
+            <form onchange=recalculate()>
+                <label for="rpm" id="rpm-label">Weapon RPM:</label>
+                <input type="text" id="rpm" name="rpm" value="750" maxlength="3">
+                <label for="bloom" id="bloom-label">Weapon Bloom:</label>
+                <input type="text" id="bloom" name="bloom" value="0.05" maxlength="4">
+                <label for="bullets" id="bullets-label">Bullets in Burst:</label>
+                <input type="text" id="bullets" name="bullets" value="6" maxlength="2">
+              </form>
+              <p id="weapon-calculations">
+                After you stop clicking the CoF will start to reset at: 
+                <span id="start-reset-time" class="ms">
+                    080
+                </span>
+                ms
+                 and full reset at:
+                <span id="full-reset-time" class="ms">
+                    095
+                </span>
+                ms
+              </p>
+    </body>
+    <script src="reclick-timer.js"></script>
+    <script src="recalculate.js"></script>
+</html>
