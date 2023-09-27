@@ -14,7 +14,7 @@ h1 {
     font-size: 28;
 }
 
-#tip {
+.tip {
     margin-top: 0;
     text-align: right;
 }
@@ -33,10 +33,16 @@ h1 {
 
 #weapon-calcuator {
     display: inline-block;
+}
 
-    h1 {
-        padding-top: 2em;
-    }
+#weapon-calculator-header {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+.note {
+    margin-top: 0;
+    margin-bottom: 2em;
 }
 
 #weapon-calculations {
@@ -69,4 +75,10 @@ input {
 
 #bullets {
     width: 2em;
+}
+
+#common_lmgs {
+    margin: 0 auto;
+    padding-top: 2em;
+    width: 750px;
 }

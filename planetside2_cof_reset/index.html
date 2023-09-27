@@ -3,9 +3,9 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <h1>Planetside 2 ADS CoF Reset Timer</h1>
+        <h1>Planetside 2 Aim Down Sight Cone of Fire Reset Timer</h1>
         <div id="screenshot"></div>
-        <p id="tip">*burst with your mouse on the image like you would ingame.</p>
+        <p class="tip">*Burst with your mouse on the image like you would in-game.</p>
         <div>
             <p id="click-timer">
                 Time between mouse release and re-click: 
@@ -16,7 +16,10 @@
             </p>        
         </div>
         <div id="weapon-calculator">
-            <h1>Weapon ADS CoF Reset Calculator</h1>
+            <h1 id="weapon-calculator-header">Weapon Aim Down Sight Cone of Fire Reset Calculator</h1>
+            <p class="note">
+                *Scout rifles nearly instantly reset and the blackhand/showdown don't follow this formula.
+            </p>
             <form onchange=recalculate()>
                 <label for="rpm" id="rpm-label">Weapon RPM:</label>
                 <input type="text" id="rpm" name="rpm" value="750" maxlength="3">
@@ -39,6 +42,13 @@
               </p>
             </form>
         </div>
+        <div id="common_lmgs">
+            <img src="images/t9carv_stats.png" alt="T9 Carv Stats" height="400">
+            <img src="images/orion_stats.png" alt="Orion Stats" height="400">
+            <img src="images/nc6gausssaw_stats.png" alt="GD22S Stats" height="400">
+            <p class="tip">*Mouse over a weapon in-game to see these stats.</p>
+        </div>
+    </body>
     <script src="reclick-timer.js"></script>
     <script src="recalculate.js"></script>
 </html>
