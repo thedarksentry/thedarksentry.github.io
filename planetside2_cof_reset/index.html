@@ -21,11 +21,19 @@
                 *Does not apply to scout rifles and blackhand/showdown.
             </p>
             <form onchange=recalculate()>
-                <label for="rpm" id="rpm-label">Weapon RPM:</label>
+                <label for="rpm" id="rpm-label" class="tooltip">
+                    Weapon RPM:
+                    <span class="tooltip-content"><img src="images/t9_carv_rpm.png"></span>
+                </label>
                 <input type="text" id="rpm" name="rpm" value="750" maxlength="3">
-                <label for="bloom" id="bloom-label">Weapon Bloom:</label>
+                <label for="bloom" id="bloom-label" class="tooltip">
+                    Weapon Bloom:
+                    <span class="tooltip-content"><img src="images/t9_carv_bloom.png"></span>
+                </label>
                 <input type="text" id="bloom" name="bloom" value="0.05" maxlength="4">
-                <label for="bullets" id="bullets-label">Bullets in Burst:</label>
+                <label for="bullets" id="bullets-label">
+                    Bullets in Burst:
+                </label>
                 <input type="text" id="bullets" name="bullets" value="6" maxlength="2">
               </form>
               <p id="weapon-calculations">
@@ -41,10 +49,6 @@
                 ms
               </p>
             </form>
-        </div>
-        <div id="common_lmgs">
-            <img src="images/nc6gausssaw_stats.png" alt="GD22S Stats" height="400">
-            <p class="tip">*Mouse over your weapon in-game.</p>
         </div>
     </body>
     <script src="reclick-timer.js"></script>

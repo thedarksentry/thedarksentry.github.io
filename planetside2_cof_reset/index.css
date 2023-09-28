@@ -1,6 +1,6 @@
 body {
     background-color: #303030;
-    color: #cfcfcf;
+    color: #d8d8d8;
     margin: 0 auto;
     text-align: center;
     width: 1024px;
@@ -55,6 +55,7 @@ form {
 
 input { 
     font: inherit;
+    background: #d8d8d8;
 }
 
 #rpm {
@@ -77,8 +78,28 @@ input {
     width: 2em;
 }
 
-#common_lmgs {
-    margin: 0 auto;
-    padding-top: 2em;
-    width: 246px;
+.tooltip {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.tooltip .tooltip-content {
+    position: absolute;
+    z-index: 9999;
+    margin: 1.5em 0 0 -190px;
+    opacity: 0;
+}
+
+.tooltip .tooltip-content img {
+    position: relative;
+    height: 400px;
+    display: block;
+    float: left;
+}
+
+.tooltip:hover .tooltip-content {
+    pointer-events: auto;
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0) rotate3d(0, 0, 0, 0deg);
+    transform: translate3d(0, 0, 0) rotate3d(0, 0, 0, 0deg)
 }
