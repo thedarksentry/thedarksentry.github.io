@@ -58,17 +58,12 @@ input {
     background: #d8d8d8;
 }
 
-#rpm-label {
-    text-decoration: underline;
-}
-
 #rpm {
     width: 3em;
 }
 
 #bloom-label {
     margin-left: 2em;
-    text-decoration: underline;
 }
 
 #bloom {
