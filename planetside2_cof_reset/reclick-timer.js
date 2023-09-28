@@ -8,7 +8,9 @@ function end() {
     if (start_time == undefined) {
         return null;
     } else {
-        document.getElementById("reclick-value").textContent = new Date() - start_time;
+        var reclick_time = new Date() - start_time
+        document.getElementById("reclick-value").textContent = reclick_time;
+        console.log(reclick_time);
     }
 }
 

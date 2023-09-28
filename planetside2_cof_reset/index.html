@@ -3,7 +3,7 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <h1>Planetside 2 Aim Down Sight Cone of Fire Reset Timer</h1>
+        <h1>Planetside 2 ADS Cone of Fire Reset Timer</h1>
         <div id="screenshot"></div>
         <p class="tip">*Burst with your mouse on the image like you would in-game.</p>
         <div>
@@ -16,9 +16,9 @@
             </p>        
         </div>
         <div id="weapon-calculator">
-            <h1 id="weapon-calculator-header">Weapon Aim Down Sight Cone of Fire Reset Calculator</h1>
+            <h1 id="weapon-calculator-header">Weapon ADS Cone of Fire Reset Calculator</h1>
             <p class="note">
-                *Scout rifles nearly instantly reset and the blackhand/showdown don't follow this formula.
+                *Does not apply to scout rifles and blackhand/showdown.
             </p>
             <form onchange=recalculate()>
                 <label for="rpm" id="rpm-label">Weapon RPM:</label>
@@ -43,10 +43,8 @@
             </form>
         </div>
         <div id="common_lmgs">
-            <img src="images/t9carv_stats.png" alt="T9 Carv Stats" height="400">
-            <img src="images/orion_stats.png" alt="Orion Stats" height="400">
             <img src="images/nc6gausssaw_stats.png" alt="GD22S Stats" height="400">
-            <p class="tip">*Mouse over a weapon in-game to see these stats.</p>
+            <p class="tip">*Mouse over your weapon in-game.</p>
         </div>
     </body>
     <script src="reclick-timer.js"></script>
