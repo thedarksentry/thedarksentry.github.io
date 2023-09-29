@@ -1,16 +1,17 @@
-var start_time;
+var unclick_time;
 
 function start() {
-    start_time = new Date();
+    unclick_time = new Date();
 }
 
 function end() {
-    if (start_time == undefined) {
+    var reclick_time = new Date()
+    if (unclick_time == undefined) {
         return null;
     } else {
-        var reclick_time = new Date() - start_time
-        document.getElementById("reclick-value").textContent = reclick_time;
-        console.log(reclick_time);
+        var reclick_diff = reclick_time - unclick_time
+        document.getElementById("reclick-value").textContent = reclick_diff;
+        console.log(reclick_diff);
     }
 }
 
