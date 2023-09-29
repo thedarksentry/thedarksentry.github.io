@@ -5,11 +5,12 @@ function start() {
 }
 
 function end() {
-    var reclick_time = new Date()
+    var reclick_time = new Date();
+
     if (unclick_time == undefined) {
         return null;
     } else {
-        var reclick_diff = reclick_time - unclick_time
+        var reclick_diff = reclick_time - unclick_time;
         document.getElementById("reclick-value").textContent = reclick_diff;
         console.log(reclick_diff);
     }
