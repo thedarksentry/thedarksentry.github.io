@@ -98,8 +98,12 @@ input {
 }
 
 .tooltip:hover .tooltip-content {
-    pointer-events: auto;
+    cursor: auto;
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0) rotate3d(0, 0, 0, 0deg);
     transform: translate3d(0, 0, 0) rotate3d(0, 0, 0, 0deg)
+}
+
+.tooltip .tooltip-content:hover {
+    opacity: 0;
 }
